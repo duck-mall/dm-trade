@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.duckmall</groupId>
+		<artifactId>dm-trade</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>dm-trade-bootstrap</artifactId>
+	<name>dm-trade-bootstrap</name>
+	<version>${parent.version}</version>
+	<description>dm-trade-bootstrap</description>
+
+	<dependencies>
+		<!--sub models-->
+		<dependency>
+			<groupId>com.duckmall</groupId>
+			<artifactId>dm-trade-bootstrap</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.duckmall</groupId>
+			<artifactId>dm-trade-facade</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.duckmall</groupId>
+			<artifactId>dm-trade-application</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.duckmall</groupId>
+			<artifactId>dm-trade-domain</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.duckmall</groupId>
+			<artifactId>dm-trade-dal</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.duckmall</groupId>
+			<artifactId>dm-trade-cache</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+		<!--sub models end-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

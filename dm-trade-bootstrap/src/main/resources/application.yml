@@ -1,0 +1,17 @@
+server:
+  port: 8098
+spring:
+  profiles:
+    active: dev
+  application:
+    name: dm-trade
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.222.7.118:8848
+
+
+
+
+
+
